@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Polarship DApp</title>
+  </head>
+  <body>
+    <h1 class="text-center">Polarship DApp</h1>
+    <hr/>
+    <!-- ... -->
+
+    <div style="text-align: center;">
+      <h3>Ho's donation page</h3>
+	  
+      <h3> <span>Coin name:</span> <span id="coinName"></span>
+	  <span><br>Coin supply:</span> <span id="balanceOf"></span>
+	  </h3>
+		<div>
+              <h4>Transfer</h4>
+              <!-- <input type="text"  id="transferAddress" placeholder="Address" /> -->
+              <input type="text"  id="transferAmount" placeholder="Amount" />
+              <button id="transferButton" type="button">Transfer</button>
+        </div>
+      <!-- <button id="registerToFight" onclick="registerAsSecondWrestler()">Get Balance</button> -->
+    </div>
+
+
+    <!-- JQuery will help us extract data from json files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Web3.js will help us interact with the deployed smart contract -->
+    <script src="JShelpers/web3.min.js"></script>
+    <!-- Truffle contract  will our life easier when interacting with smart contracts -->
+    <script src="JShelpers/truffle-contract.js"></script>
+    <!-- app.js is where we will write our JS logic -->
+    <script src="JShelpers/app.js"></script>
+  </body>
+</html>
